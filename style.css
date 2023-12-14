@@ -12,7 +12,7 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background: url('/img') center/cover no-repeat;
+  background: url('/group.jpeg') center/cover no-repeat;
 }
 
 .quote {
