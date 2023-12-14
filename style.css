@@ -6,7 +6,7 @@
 }
 
 /* Laptop-specific styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600px) {
   body {
     height: 100vh;
     display: flex;
@@ -174,6 +174,10 @@
     transform-origin: center center;
   }
 
+  .text-message {
+    display: none;
+  }
+
   @keyframes shrink {
     0% {
       width: 90%;
@@ -192,10 +196,32 @@
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  body {
-    background: #000000;
+/* Default styles (hidden) */
+
+
+/* Media query for screens with a max-width of 599 pixels */
+@media only screen and (max-width: 599px) {
+
+  /* Display the message when the screen width is 599 pixels or less */
+  .music-container {
     display: none;
-    /* Hide the entire body content for mobile and tablet */
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: url('/g.jpg') center/cover no-repeat;
+  }
+
+  .text-message {
+    font-size: 35px;
+    /* Adjust font size as needed */
+    font: bolder;
+    color: #fff;
   }
 }
