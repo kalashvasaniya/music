@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: black;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,8 +12,10 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   margin: 0;
+  background: url('/img') center/cover no-repeat;
 }
-.quote{
+
+.quote {
   color: #fc5c00;
   font-family: cursive;
 }
@@ -114,6 +115,7 @@ body {
   z-index: 0;
   color: rgb(0, 0, 0);
 }
+
 .music-container.play .music-info {
   opacity: 1;
   transform: translateY(-100%);
@@ -144,26 +146,28 @@ body {
   animation: float 3s ease-out infinite;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.adamya{
+.adamya {
   padding-left: 370px;
 }
 
 @keyframes float {
   50% {
-     transform: translate(0, 20px);
+    transform: translate(0, 20px);
   }
 }
+
 .shadowFrame {
   width: 130px;
   margin-bottom: 15px;
 }
+
 .shadow {
   animation: shrink 3s ease-out infinite;
   transform-origin: center center;
@@ -174,10 +178,12 @@ body {
     width: 90%;
     margin: 0 5%;
   }
+
   50% {
     width: 60%;
     margin: 0 18%;
   }
+
   100% {
     width: 90%;
     margin: 0 5%;
