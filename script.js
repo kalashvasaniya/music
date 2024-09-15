@@ -13,7 +13,7 @@ const durTime = document.querySelector('#durTime');
 
 
 // Song titles
-const songs = ['bom diggy diggy', 'Rinkiya ke papa', 'Hulle Hullare'];
+const songs = ['Rinkiya ke papa', 'Hulle Hullare', 'Dishu ki Ahh'];
 
 // Keep track of song
 let songIndex = 2;
