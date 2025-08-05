@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { NextSeo } from 'next-seo'
 
 interface Song {
   title: string
@@ -88,28 +87,6 @@ export default function Home() {
 
   return (
     <>
-      <NextSeo
-        title="Kalash Vasaniya | Mojo Player"
-        description="Listen to the latest tracks from Kalash Vasaniya. Enjoy high-quality music streaming with our modern music player."
-        openGraph={{
-          title: 'Kalash Vasaniya | Mojo Player',
-          description: 'Listen to the latest tracks from Kalash Vasaniya. Enjoy high-quality music streaming with our modern music player.',
-          images: [
-            {
-              url: '/img/uv.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'Mojo Player Cover',
-            },
-          ],
-        }}
-        twitter={{
-          handle: '@kalashvasaniya',
-          site: '@kalashvasaniya',
-          cardType: 'summary_large_image',
-        }}
-      />
-
       <div className={`music-container ${isPlaying ? 'play' : ''}`}>
         <div className="music-info">
           <h4>{currentSong.title}</h4>

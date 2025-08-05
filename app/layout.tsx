@@ -5,12 +5,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kalash Vasaniya | Mojo Player',
-  description: 'Listen to the latest tracks from Kalash Vasaniya. Enjoy high-quality music streaming with our modern music player.',
-  keywords: 'music, player, kalash vasaniya, streaming, audio, songs',
-  authors: [{ name: 'Kalash Vasaniya' }],
-  creator: 'Kalash Vasaniya',
-  publisher: 'Kalash Vasaniya',
+  title: 'College',
+  description: 'Listen to the latest tracks. Enjoy high-quality music streaming with our modern music player.',
+  keywords: 'music, player, streaming, audio, songs',
+  authors: [{ name: 'College' }],
+  creator: 'College',
+  publisher: 'College',
   formatDetection: {
     email: false,
     address: false,
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Kalash Vasaniya | Mojo Player',
-    description: 'Listen to the latest tracks from Kalash Vasaniya. Enjoy high-quality music streaming with our modern music player.',
+    title: 'College',
+    description: 'Listen to the latest tracks. Enjoy high-quality music streaming with our modern music player.',
     url: 'https://your-domain.com',
-    siteName: 'Mojo Player',
+    siteName: 'College',
     images: [
       {
         url: '/img/uv.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mojo Player Cover',
+        alt: 'College Cover',
       },
     ],
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kalash Vasaniya | Mojo Player',
-    description: 'Listen to the latest tracks from Kalash Vasaniya. Enjoy high-quality music streaming with our modern music player.',
+    title: 'College',
+    description: 'Listen to the latest tracks. Enjoy high-quality music streaming with our modern music player.',
     images: ['/img/uv.jpg'],
   },
   robots: {
@@ -82,22 +82,7 @@ export default function RootLayout({
           }}
         />
         
-        {/* Tawk.to Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-              (function(){
-                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/61876df16885f60a50baa9fa/1fjsgaul6';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-              })();
-            `,
-          }}
-        />
+
       </head>
       <body className={inter.className}>{children}</body>
     </html>
